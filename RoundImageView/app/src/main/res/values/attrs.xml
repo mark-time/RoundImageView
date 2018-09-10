@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--左上角是否是外圆  true为外半圆 false为内半圆-->
+    <attr name="isTopLeftOuterCircle" format="boolean" />
+    <attr name="isTopRightOuterCircle" format="boolean" />
+    <attr name="isBottomLeftOuterCircle" format="boolean" />
+    <attr name="isBottomRightOuterCircle" format="boolean" />
+    <!--左上角是否要半圆-->
+    <attr name="isTopLeft" format="boolean" />
+    <!--右上角是否要半圆-->
+    <attr name="isTopRight" format="boolean" />
+    <!--左下角是否要半圆-->
+    <attr name="isBottomLeft" format="boolean" />
+    <!--又下角是否要半圆-->
+    <attr name="isBottomRight" format="boolean" />
+    <!--弧度-->
+    <attr name="radius" format="dimension" />
+
+    <declare-styleable name="roundImageView">
+        <attr name="isTopLeftOuterCircle" />
+        <attr name="isTopRightOuterCircle" />
+        <attr name="isBottomLeftOuterCircle" />
+        <attr name="isBottomRightOuterCircle" />
+        <attr name="isTopLeft" />
+        <attr name="isTopRight" />
+        <attr name="isBottomLeft" />
+        <attr name="isBottomRight" />
+        <attr name="radius" />
+    </declare-styleable>
+</resources>
