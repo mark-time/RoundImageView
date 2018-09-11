@@ -10,7 +10,8 @@ import android.util.TypedValue;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.guang.myapplication.R;
+import com.guang.R;
+
 
 /**
  * youxuanz
