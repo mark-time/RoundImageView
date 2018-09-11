@@ -2,12 +2,14 @@
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.android.library'
 
+//group='com.github.guang'
+
 android {
     compileSdkVersion 26
     buildToolsVersion '27.0.3'
     defaultConfig {
 //        applicationId "com.guang.myapplication"
-        minSdkVersion 21
+        minSdkVersion 14
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
