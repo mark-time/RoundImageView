@@ -54,36 +54,55 @@ public class RoundImageView extends ImageView {
         int count = array.getIndexCount();
         for (int i = 0; i < count; i++) {
             int attr = array.getIndex(i);
-            switch (attr) {
-                case R.styleable.roundImageView_isTopLeftOuterCircle://true为外半圆 false为内半圆
-                    misTopLeftOuterCircle = array.getBoolean(attr, true);
-                    break;
-                case R.styleable.roundImageView_isTopRightOuterCircle://true为外半圆 false为内半圆
-                    mIsTopRightOuterCircle = array.getBoolean(attr, true);
-                    break;
-                case R.styleable.roundImageView_isBottomLeftOuterCircle://true为外半圆 false为内半圆
-                    mIsBottomLeftOuterCircle = array.getBoolean(attr, true);
-                    break;
-                case R.styleable.roundImageView_isBottomRightOuterCircle://true为外半圆 false为内半圆
-                    mIsBottomRightOuterCircle = array.getBoolean(attr, true);
-                    break;
-                case R.styleable.roundImageView_isTopLeft://左上角是否要半圆
-                    mIsTopLeft = array.getBoolean(attr, true);
-                    break;
-                case R.styleable.roundImageView_isTopRight://左上角是否要半圆
-                    mIsTopRight = array.getBoolean(attr, true);
-                    break;
-                case R.styleable.roundImageView_isBottomLeft://左上角是否要半圆
-                    mIsBottomLeft = array.getBoolean(attr, true);
-                    break;
-                case R.styleable.roundImageView_isBottomRight://左上角是否要半圆
-                    mIsBottomRight = array.getBoolean(attr, true);
-                    break;
-                case R.styleable.roundImageView_radius://左上角是否要半圆
-                    mRadius = (int) array.getDimension(attr, TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_PX, 0, getResources().getDisplayMetrics()));
-                    break;
-                default:
+            if (attr == R.styleable.roundImageView_isTopLeftOuterCircle) {
+                misTopLeftOuterCircle = array.getBoolean(attr, true);
+            }else if(attr == R.styleable.roundImageView_isTopRightOuterCircle) {
+                mIsTopRightOuterCircle = array.getBoolean(attr, true);
+            }else if(attr == R.styleable.roundImageView_isBottomLeftOuterCircle) {
+                mIsBottomLeftOuterCircle = array.getBoolean(attr, true);
+            }else if(attr == R.styleable.roundImageView_isBottomRightOuterCircle) {
+                mIsBottomRightOuterCircle = array.getBoolean(attr, true);
+            }else if(attr == R.styleable.roundImageView_isTopLeft) {
+                mIsTopLeft = array.getBoolean(attr, true);
+            }else if(attr == R.styleable.roundImageView_isTopRight) {
+                mIsTopRight = array.getBoolean(attr, true);
+            }else if(attr == R.styleable.roundImageView_isBottomLeft) {
+                mIsBottomLeft = array.getBoolean(attr, true);
+            }else if(attr == R.styleable.roundImageView_isBottomRight) {
+                mIsBottomRight = array.getBoolean(attr, true);
+            }else if(attr == R.styleable.roundImageView_radius) {
+                mRadius = (int) array.getDimension(attr, TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_PX, 0, getResources().getDisplayMetrics()));
             }
+//            switch (attr) {
+//                case R.styleable.roundImageView_isTopLeftOuterCircle://true为外半圆 false为内半圆
+//                    misTopLeftOuterCircle = array.getBoolean(attr, true);
+//                    break;
+//                case R.styleable.roundImageView_isTopRightOuterCircle://true为外半圆 false为内半圆
+//                    mIsTopRightOuterCircle = array.getBoolean(attr, true);
+//                    break;
+//                case R.styleable.roundImageView_isBottomLeftOuterCircle://true为外半圆 false为内半圆
+//                    mIsBottomLeftOuterCircle = array.getBoolean(attr, true);
+//                    break;
+//                case R.styleable.roundImageView_isBottomRightOuterCircle://true为外半圆 false为内半圆
+//                    mRadius = (int) array.getDimension(attr, TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_PX, 0, getResources().getDisplayMetrics()));
+//                    break;
+//                case R.styleable.roundImageView_isTopLeft://左上角是否要半圆
+//                    mIsTopLeft = array.getBoolean(attr, true);
+//                    break;
+//                case R.styleable.roundImageView_isTopRight://左上角是否要半圆
+//                    mIsTopRight = array.getBoolean(attr, true);
+//                    break;
+//                case R.styleable.roundImageView_isBottomLeft://左上角是否要半圆
+//                    mIsBottomLeft = array.getBoolean(attr, true);
+//                    break;
+//                case R.styleable.roundImageView_isBottomRight://左上角是否要半圆
+//                    mIsBottomRight = array.getBoolean(attr, true);
+//                    break;
+//                case R.styleable.roundImageView_radius://左上角是否要半圆
+//                    mRadius = (int) array.getDimension(attr, TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_PX, 0, getResources().getDisplayMetrics()));
+//                    break;
+//                default:
+//            }
         }
 
     }
