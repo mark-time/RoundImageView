@@ -32,6 +32,7 @@ dependencies {
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
     testImplementation 'junit:junit:4.12'
     compile 'com.github.quentin7b:android-location-tracker:3.2'
+    implementation 'com.github.jitpack:gradle-simple:1.0'
 //    androidTestImplementation 'com.android.support.test:runner:1.0.2'
 //    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 //    androidTestCompile 'com.android.support:support-annotations:26.1.0'
